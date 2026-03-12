@@ -90,6 +90,7 @@ module "ecs" {
   database_url_secret_arn = module.secrets.database_url_secret_arn
   secret_key_arn          = module.secrets.secret_key_arn
   ecr_repository_arn      = module.ecr.repository_arn
+  cricapi_key             = var.cricapi_key
 }
 
 # ── Monthly budget alert ──────────────────────────────────────────────────────

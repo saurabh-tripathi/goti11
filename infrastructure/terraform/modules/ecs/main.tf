@@ -122,9 +122,10 @@ resource "aws_ecs_task_definition" "app" {
     ]
 
     environment = [
-      { name = "ENVIRONMENT", value = var.environment },
-      { name = "API_PREFIX",  value = "/api" },
+      { name = "ENVIRONMENT",  value = var.environment },
+      { name = "API_PREFIX",   value = "/api" },
       { name = "CORS_ORIGINS", value = "https://${var.domain_name}" },
+      { name = "CRICAPI_KEY",  value = var.cricapi_key },
     ]
 
     logConfiguration = {

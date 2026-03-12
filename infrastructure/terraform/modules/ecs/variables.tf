@@ -41,3 +41,8 @@ variable "frontend_target_group_arn" { type = string }
 variable "database_url_secret_arn" { type = string }
 variable "secret_key_arn"          { type = string }
 variable "ecr_repository_arn"      { type = string }
+
+variable "cricapi_key" {
+  type    = string
+  default = ""
+}

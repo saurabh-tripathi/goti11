@@ -47,6 +47,12 @@ variable "subdomain" {
   default     = "goti11"
 }
 
+variable "cricapi_key" {
+  type        = string
+  description = "CricAPI key for squad/score sync. Set via TF_VAR_cricapi_key env var."
+  default     = ""
+}
+
 variable "budget_alert_email" {
   type        = string
   description = "Email address for monthly budget alerts."
