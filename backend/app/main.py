@@ -9,7 +9,7 @@ from app.routers import admin, auth, leaderboard, matches, rules, series, teams
 # In dev the Vite proxy already strips /api, so leave it empty.
 _api_prefix = os.getenv("API_PREFIX", "")
 
-app = FastAPI(title="Goti11 API", version="1.0.0", root_path=_api_prefix)
+app = FastAPI(title="Goti11 API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
